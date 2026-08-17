@@ -3,218 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio | Adriana Huertas Martín</title>
+  <title>Hoja de Vida & Portafolio | Adriana Huertas</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .foto-perfil-container {
+      width: 180px;
+      height: 180px;
+      min-width: 180px;
+      min-height: 180px;
+      border-radius: 9999px;
+      overflow: hidden;
+      border: 4px solid #3b82f6;
+    }
+    .foto-perfil-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans leading-relaxed">
 
-  <!-- ENCABEZADO / PERFIL -->
-  <header class="max-w-5xl mx-auto px-6 py-16 border-b border-slate-800">
+  <!-- ENCABEZADO CON FOTO ENCUADRADA -->
+  <header class="max-w-5xl mx-auto px-6 py-12 border-b border-slate-800">
     <div class="flex flex-col md:flex-row items-center justify-between gap-8">
       <div class="md:w-2/3">
-        <span class="bg-blue-600/20 text-blue-400 border border-blue-500/30 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
-          Líder de Proyectos & Transformación Digital
+        <span class="bg-blue-600/20 text-blue-400 border border-blue-500/30 text-xs font-semibold px-3 py-1 rounded-full uppercase">
+          Líder de Proyectos & IA
         </span>
-        <h1 class="text-4xl md:text-5xl font-extrabold text-white mt-4 tracking-tight">
-          Adriana Huertas Martín
-        </h1>
-        <p class="text-xl text-slate-400 mt-2 font-medium">
-          Jefe de Automatización, Mejora Continua & Inteligencia Artificial Aplicada
-        </p>
-        <p class="text-slate-300 mt-4 max-w-2xl text-sm leading-relaxed">
-          Profesional en Administración de Empresas con Especialización en Gerencia de Proyectos y Maestría en Inteligencia Artificial. Experta en liderar la transformación digital, reingeniería de procesos operacionales y logísticos, automatización con RPA/Python, gestión de PQR y modelos preventivos de fraude financiero.
-        </p>
-        <div class="mt-6 flex flex-wrap gap-4">
-          <a href="mailto:adrimahuertas@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-5 py-2.5 rounded-lg transition flex items-center gap-2 text-sm">
-            <i class="fa-solid fa-envelope"></i> Contactar
-          </a>
-          <a href="tel:+573247299090" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium px-5 py-2.5 rounded-lg transition flex items-center gap-2 text-sm">
-            <i class="fa-solid fa-phone"></i> +57 324 729 9090
-          </a>
-        </div>
+        <h1 class="text-4xl font-extrabold text-white mt-3">Adriana Huertas V[cite: 1]</h1>
+        <p class="text-lg text-slate-300 mt-1">Jefe de Automatización y Mejora Continua de Procesos[cite: 1]</p>
+        <p class="text-xs text-slate-400 mt-2">Mosquera, Colombia[cite: 1] | adrimile_8@outlook.com[cite: 1] | +57 324 729 9090[cite: 1]</p>
       </div>
 
       <!-- FOTO DE PERFIL -->
-      <div class="relative group">
-        <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur opacity-50 group-hover:opacity-100 transition duration-300"></div>
-        <img src="foto.jpg" alt="Adriana Huertas Martín" class="relative w-48 h-48 rounded-full object-cover border-4 border-slate-900 shadow-2xl" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Adriana+Huertas&size=200&background=2563eb&color=fff';">
+      <div class="foto-perfil-container shadow-xl">
+        <img src="foto.jpg" alt="Adriana Huertas" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Adriana+Huertas&size=200&background=2563eb&color=fff';">
       </div>
     </div>
   </header>
 
-  <!-- MÉTRICAS Y LOGROS DESTACADOS -->
-  <section class="max-w-5xl mx-auto px-6 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-6 text-center">
-        <div class="text-3xl font-extrabold text-blue-400 mb-1">-60%</div>
-        <div class="text-lg font-semibold text-white">Cargas Manuales</div>
-        <p class="text-xs text-slate-400 mt-2">Reducción operativa en el Banco de Bogotá mediante automatización RPA y Python.</p>
-      </div>
-      <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-6 text-center">
-        <div class="text-3xl font-extrabold text-cyan-400 mb-1">Lean & Six Sigma</div>
-        <div class="text-lg font-semibold text-white">Reingeniería de Procesos</div>
-        <p class="text-xs text-slate-400 mt-2">Optimización de redes logísticas, aduaneras y servicio al cliente financiero.</p>
-      </div>
-      <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-6 text-center">
-        <div class="text-3xl font-extrabold text-emerald-400 mb-1">Ponencia IA 2026</div>
-        <div class="text-lg font-semibold text-white">Detección de Fraudes</div>
-        <p class="text-xs text-slate-400 mt-2">Reconocimiento académico por investigación en detección de fraudes con IA.</p>
+  <!-- SECCIÓN DE PROYECTOS DESTACADOS CON DEMOS -->
+  <section class="max-w-5xl mx-auto px-6 py-10">
+    <div class="bg-slate-800/80 border-2 border-cyan-500/40 p-6 rounded-2xl">
+      <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+        <i class="fa-solid fa-laptop-code text-cyan-400"></i>
+        <span>PROYECTOS DESTACADOS & DEMOS</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Proyecto 1 -->
+        <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl p-5 flex flex-col justify-between hover:border-cyan-500/60 transition">
+          <div>
+            <span class="text-xs font-semibold text-cyan-400 bg-cyan-950/80 px-2.5 py-1 rounded border border-cyan-800/50">IA & Finanzas</span>
+            <h3 class="text-lg font-bold text-white mt-3">Sistema de Detección de Fraude Financiero[cite: 1]</h3>
+            <p class="text-xs text-slate-300 mt-2">
+              Modelo predictivo para la identificación de transacciones sospechosas y compras no reconocidas mediante inteligencia artificial[cite: 1].
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-xs text-slate-400"><strong class="text-slate-200">Logro:</strong> Ponencia U. La Salle 2026[cite: 1]</span>
+            <a href="https://github.com/adrianamilenahuertasmartin-collab/Adriana-Huertas-PT" target="_blank" class="bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-play"></i> Ver Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl p-5 flex flex-col justify-between hover:border-cyan-500/60 transition">
+          <div>
+            <span class="text-xs font-semibold text-blue-400 bg-blue-950/80 px-2.5 py-1 rounded border border-blue-800/50">RPA & Analítica</span>
+            <h3 class="text-lg font-bold text-white mt-3">Automatización Operativa & Dashboard Python[cite: 1]</h3>
+            <p class="text-xs text-slate-300 mt-2">
+              Automatización de cargas manuales con Python/RPA y tableros interactivos en Power BI para control de KPIs y SLAs[cite: 1].
+            </p>
+          </div>
+          <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-xs text-slate-400"><strong class="text-slate-200">Impacto:</strong> -60% Carga manual[cite: 1]</span>
+            <a href="https://github.com/adrianamilenahuertasmartin-collab/Adriana-Huertas-PT" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-play"></i> Ver Demo
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCIA LABORAL (HOJA DE VIDA) -->
-  <section class="max-w-5xl mx-auto px-6 py-10">
-    <h2 class="text-2xl font-bold text-white mb-8 border-l-4 border-blue-500 pl-3">
-      <i class="fa-solid fa-briefcase mr-2 text-blue-400"></i> Experiencia Laboral
-    </h2>
+  <!-- SECCIÓN EXPERIENCIA LABORAL -->
+  <section class="max-w-5xl mx-auto px-6 py-6">
+    <div class="bg-slate-800/80 border-2 border-blue-500/40 p-6 rounded-2xl">
+      <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+        <i class="fa-solid fa-briefcase text-blue-400"></i>
+        <span>EXPERIENCIA LABORAL</span>
+      </h2>
 
-    <div class="space-y-8 relative border-l border-slate-800 ml-3 pl-6">
-
-      <!-- Cargo 1 -->
-      <div class="relative">
-        <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-blue-500 rounded-full border-4 border-slate-900"></div>
-        <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700/50">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
-            <h3 class="text-lg font-bold text-white">Jefe de Automatización y Mejora Continua de Procesos</h3>
-            <span class="text-xs font-semibold text-blue-400 bg-blue-950/60 px-3 py-1 rounded-full border border-blue-800/40 w-fit">Ene 2021 – Ago 2026</span>
+      <div class="space-y-6">
+        <div class="border-l-2 border-blue-500 pl-4">
+          <div class="flex justify-between items-start flex-wrap">
+            <h3 class="text-lg font-bold text-white">Jefe de Automatización y Mejora Continua Procesos[cite: 1]</h3>
+            <span class="text-xs bg-blue-900/60 text-blue-300 px-2.5 py-1 rounded font-mono">Ene 2021 - Ago 2026[cite: 1]</span>
           </div>
-          <p class="text-sm font-medium text-slate-400 mt-1">Banco de Bogotá</p>
-          <ul class="mt-4 space-y-2 text-xs text-slate-300 list-disc list-inside">
-            <li>Reducción del 60% de cargas manuales con Python y RPA en procesos operativos y de servicio al cliente.</li>
-            <li>Implementación de cronogramas y control presupuestal en proyectos tecnológicos SAP y Salesforce.</li>
-            <li>Transformación de procesos de atención con modelos de PQR, CX y reingeniería Lean Six Sigma.</li>
-            <li>Consultoría estratégica interna tipo McKinsey para aceleración digital de la organización.</li>
-            <li>Diseño de dashboards en Power BI + Python con alertas estratégicas en tiempo real de KPIs.</li>
+          <p class="text-sm font-semibold text-blue-400">Banco de Bogotá[cite: 1]</p>
+          <ul class="list-disc list-inside text-xs text-slate-300 mt-2 space-y-1">
+            <li>Reducción del 60% de cargas manuales con Python y RPA en procesos operativos y servicio al cliente[cite: 1].</li>
+            <li>Implementación de cronogramas y control presupuestal en proyectos SAP/Salesforce[cite: 1].</li>
+            <li>Reingeniería de procesos en banca y logística con metodologías Lean y Six Sigma[cite: 1].</li>
+            <li>Implementación de dashboards en Power BI + Python para correlacionar KPIs críticos[cite: 1].</li>
           </ul>
         </div>
-      </div>
 
-      <!-- Cargo 2 -->
-      <div class="relative">
-        <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-cyan-500 rounded-full border-4 border-slate-900"></div>
-        <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700/50">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
-            <h3 class="text-lg font-bold text-white">Coordinadora de Procesos e Importación</h3>
-            <span class="text-xs font-semibold text-cyan-400 bg-cyan-950/60 px-3 py-1 rounded-full border border-cyan-800/40 w-fit">Ene 2020 – Ene 2021</span>
+        <div class="border-l-2 border-slate-600 pl-4">
+          <div class="flex justify-between items-start flex-wrap">
+            <h3 class="text-lg font-bold text-white">Coordinadora de Procesos e Importación[cite: 1]</h3>
+            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded font-mono">Ene 2020 - Ene 2021[cite: 1]</span>
           </div>
-          <p class="text-sm font-medium text-slate-400 mt-1">Aerosan S.A.S</p>
-          <ul class="mt-4 space-y-2 text-xs text-slate-300 list-disc list-inside">
-            <li>Automatización con RPA en procesos logísticos y aduaneros, logrando mayor trazabilidad y eficiencia.</li>
-            <li>Estrategias digitales omnicanal para optimizar tiempos de respuesta y satisfacción del cliente.</li>
-            <li>Gestión de procesos aplicando metodologías PMI, Lean y Six Sigma en la cadena de carga.</li>
+          <p class="text-sm font-semibold text-slate-400">Aerosan S.A.S[cite: 1]</p>
+          <ul class="list-disc list-inside text-xs text-slate-300 mt-2 space-y-1">
+            <li>Automatización con RPA en procesos logísticos y aduaneros[cite: 1].</li>
+            <li>Diseño de estrategias digitales omnicanal para optimizar tiempos de respuesta[cite: 1].</li>
           </ul>
         </div>
-      </div>
 
-      <!-- Cargo 3 -->
-      <div class="relative">
-        <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-slate-600 rounded-full border-4 border-slate-900"></div>
-        <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700/50">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
-            <h3 class="text-lg font-bold text-white">Auditor de Calidad (Proyecto)</h3>
-            <span class="text-xs font-semibold text-slate-400 bg-slate-800 px-3 py-1 rounded-full border border-slate-700 w-fit">Ene 2019 – Ene 2020</span>
+        <div class="border-l-2 border-slate-600 pl-4">
+          <div class="flex justify-between items-start flex-wrap">
+            <h3 class="text-lg font-bold text-white">Auditor de Calidad (Proyecto)[cite: 1]</h3>
+            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded font-mono">Ene 2019 - Ene 2020[cite: 1]</span>
           </div>
-          <p class="text-sm font-medium text-slate-400 mt-1">Unidad de Atención para las Víctimas</p>
-          <ul class="mt-4 space-y-2 text-xs text-slate-300 list-disc list-inside">
-            <li>Auditoría de procesos institucionales y formulación de planes de mejora con enfoque al usuario.</li>
-            <li>Fortalecimiento de la gestión documental, auditoría y cumplimiento normativo.</li>
-          </ul>
+          <p class="text-sm font-semibold text-slate-400">Unidad de Atención para las Víctimas[cite: 1]</p>
+        </div>
+
+        <div class="border-l-2 border-slate-600 pl-4">
+          <div class="flex justify-between items-start flex-wrap">
+            <h3 class="text-lg font-bold text-white">Coordinadora y Líder de Servicio al Cliente / PQR[cite: 1]</h3>
+            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded font-mono">2018 - 2019[cite: 1]</span>
+          </div>
+          <p class="text-sm font-semibold text-slate-400">Savicol S.A / Colsubsidio[cite: 1]</p>
         </div>
       </div>
-
-      <!-- Cargo 4 -->
-      <div class="relative">
-        <div class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 bg-slate-600 rounded-full border-4 border-slate-900"></div>
-        <div class="bg-slate-800/40 p-6 rounded-xl border border-slate-700/50">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
-            <h3 class="text-lg font-bold text-white">Coordinadora de Procesos de Servicio al Cliente / Líder PQR</h3>
-            <span class="text-xs font-semibold text-slate-400 bg-slate-800 px-3 py-1 rounded-full border border-slate-700 w-fit">2018 – 2019</span>
-          </div>
-          <p class="text-sm font-medium text-slate-400 mt-1">Savicol S.A & Colsubsidio</p>
-          <ul class="mt-4 space-y-2 text-xs text-slate-300 list-disc list-inside">
-            <li>Liderazgo de células de atención PQR aplicando metodologías ágiles para optimizar SLAs.</li>
-            <li>Diseño de modelos de atención y monitoreo de KPIs de eficiencia y satisfacción del cliente.</li>
-          </ul>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- EDUCACIÓN, RECONOCIMIENTOS Y CERTIFICACIONES -->
-  <section class="max-w-5xl mx-auto px-6 py-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <!-- SECCIÓN ESTUDIOS -->
+  <section class="max-w-5xl mx-auto px-6 py-6">
+    <div class="bg-slate-800/80 border-2 border-emerald-500/40 p-6 rounded-2xl">
+      <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+        <i class="fa-solid fa-graduation-cap text-emerald-400"></i>
+        <span>ESTUDIOS Y EDUCACIÓN</span>
+      </h2>
 
-      <!-- Formación Académica -->
-      <div>
-        <h2 class="text-xl font-bold text-white mb-6 border-l-4 border-blue-500 pl-3">
-          <i class="fa-solid fa-graduation-cap mr-2 text-blue-400"></i> Formación Académica
-        </h2>
-        <div class="space-y-4">
-          <div class="bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
-            <h3 class="text-sm font-bold text-white">Maestría en Inteligencia Artificial</h3>
-            <p class="text-xs text-blue-400">Universidad de la Salle (2025 – Actual)</p>
-          </div>
-          <div class="bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
-            <h3 class="text-sm font-bold text-white">Especialización en Gerencia de Proyectos</h3>
-            <p class="text-xs text-cyan-400">Universidad Nacional Abierta y a Distancia UNAD (2016 – 2017)</p>
-          </div>
-          <div class="bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
-            <h3 class="text-sm font-bold text-white">Administración de Empresas</h3>
-            <p class="text-xs text-slate-400">Fundación Universitaria Compensar (2002 – 2009)</p>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+          <span class="text-xs text-emerald-400 font-bold block mb-1">Dic 2025 - Actual[cite: 1]</span>
+          <h3 class="text-base font-bold text-white">Maestría en Inteligencia Artificial[cite: 1]</h3>
+          <p class="text-xs text-slate-400 mt-1">Universidad de la Salle[cite: 1]</p>
+        </div>
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+          <span class="text-xs text-emerald-400 font-bold block mb-1">Ene 2016 - Jul 2017[cite: 1]</span>
+          <h3 class="text-base font-bold text-white">Especialista en Gerencia de Proyectos[cite: 1]</h3>
+          <p class="text-xs text-slate-400 mt-1">Universidad Nacional UNAD[cite: 1]</p>
+        </div>
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-700">
+          <span class="text-xs text-slate-400 font-bold block mb-1">Ene 2002 - Dic 2009[cite: 1]</span>
+          <h3 class="text-base font-bold text-white">Administración de Empresas[cite: 1]</h3>
+          <p class="text-xs text-slate-400 mt-1">Fundación Universitaria Compensar[cite: 1]</p>
         </div>
       </div>
-
-      <!-- Reconocimientos & Certificaciones -->
-      <div>
-        <h2 class="text-xl font-bold text-white mb-6 border-l-4 border-emerald-500 pl-3">
-          <i class="fa-solid fa-award mr-2 text-emerald-400"></i> Reconocimientos & Certificaciones
-        </h2>
-        <div class="space-y-4">
-          <div class="bg-emerald-950/20 p-4 rounded-lg border border-emerald-800/40">
-            <span class="text-xs font-bold text-emerald-400 uppercase">Ponencia Académica — Mayo 2026</span>
-            <h3 class="text-sm font-bold text-white mt-1">Detección de Fraudes Financieros y Compras no Reconocidas con IA</h3>
-            <p class="text-xs text-slate-300 mt-1">Reconocimiento otorgado por la Universidad de la Salle.</p>
-          </div>
-          <div class="bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
-            <span class="text-xs font-bold text-blue-400 uppercase">IBM Certification — Agosto 2026</span>
-            <h3 class="text-sm font-bold text-white mt-1">Data Visualization and Communication</h3>
-          </div>
-          <div class="bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
-            <span class="text-xs font-bold text-blue-400 uppercase">IBM Certification — Agosto 2026</span>
-            <h3 class="text-sm font-bold text-white mt-1">Create a Data Visualization with Python</h3>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- COMPETENCIAS & HABILIDADES -->
-  <section class="max-w-5xl mx-auto px-6 py-10">
-    <h2 class="text-xl font-bold text-white mb-6 border-l-4 border-blue-500 pl-3">
-      <i class="fa-solid fa-screwdriver-wrench mr-2 text-blue-400"></i> Competencias & Habilidades Clave
-    </h2>
-    <div class="flex flex-wrap gap-2 text-xs">
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">Gerencia de Proyectos (PMI/Agile)</span>
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">Scrum & Kanban</span>
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">Lean Six Sigma</span>
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">IA Aplicada al Negocio</span>
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">Automatización RPA & Python</span>
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">Power BI & Dashboards</span>
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">Gobierno de Datos</span>
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">Gestión de PQR & CX</span>
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">Procesos Logísticos y Aduaneros</span>
-      <span class="bg-slate-800 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-lg">Definición de KPIs y OKRs</span>
     </div>
   </section>
 
   <!-- PIE DE PÁGINA -->
   <footer class="text-center py-8 text-xs text-slate-500 border-t border-slate-800 mt-10">
-    <p>© 2026 Adriana Huertas Martín — Mosquera / Bogotá, Colombia</p>
+    <p>© 2026 Adriana Huertas Martín — Mosquera / Bogotá, Colombia[cite: 1]</p>
   </footer>
 
 </body>

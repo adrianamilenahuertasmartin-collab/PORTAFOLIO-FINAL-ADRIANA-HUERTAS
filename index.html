@@ -1,83 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adriana Huertas Martín | Portafolio Profesional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        :root { --primary-dark: #0f172a; --accent-blue: #2563eb; --bg-light: #f8fafc; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: var(--bg-light); color: #1e293b; }
-        .hero-section { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 60px 0; border-bottom: 4px solid var(--accent-blue); }
-        .profile-img { width: 170px; height: 170px; object-fit: cover; border-radius: 50%; border: 4px solid #06b6d4; }
-        .card-custom { border-radius: 14px; border: 1px solid #e2e8f0; background: white; transition: all 0.3s; }
-        .card-custom:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
-        .demo-box { background-color: #f1f5f9; border-radius: 10px; padding: 20px; border: 1px solid #cbd5e1; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Adriana Huertas Martín</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header class="hero-section text-center text-md-start">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3 text-center mb-3 mb-md-0">
-                    <img src="https://ui-avatars.com/api/?name=Adriana+Huertas&size=200&background=2563eb&color=fff" class="profile-img" alt="Adriana Huertas">
-                </div>
-                <div class="col-md-9">
-                    <h1 class="fw-bold">Adriana Huertas Martín</h1>
-                    <p class="lead">Especialista en Machine Learning, Fraud Analytics, BI & Optimización</p>
-                    <p class="small text-light opacity-75"><i class="fas fa-envelope me-1"></i> adrimahuertas@gmail.com | <i class="fas fa-map-marker-alt me-1"></i> Bogotá, Colombia</p>
-                </div>
-            </div>
-        </div>
-    </header>
+<body class="bg-slate-900 text-slate-100 font-sans leading-relaxed">
 
-    <main class="container my-5">
-        <h2 class="fw-bold mb-4">Proyectos & Simuladores Interactivos</h2>
-        <div class="row g-4">
-            <div class="col-md-12">
-                <div class="card card-custom p-4">
-                    <h4 class="fw-bold text-primary"><i class="fas fa-shield-alt me-2"></i>Detección de Fraude en Tiempo Real</h4>
-                    <p class="text-muted">Simulador interactivo basado en modelo predictivo ML (XGBoost / SMOTE).</p>
-                    <div class="demo-box">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">Monto Transacción (USD):</label>
-                                <input type="number" id="monto" class="form-control" value="1800">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">Ubicación Inusual / Sospechosa:</label>
-                                <select id="ubicacion" class="form-select">
-                                    <option value="0">No (Ubicación habitual)</option>
-                                    <option value="1">Sí (IP o País inusual)</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button onclick="evaluar()" class="btn btn-primary mt-3 w-100 fw-bold">Evaluar Riesgo</button>
-                        <div id="resultado" class="mt-3 p-3 rounded text-center d-none"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+  <!-- ENCABEZADO / HERO -->
+  <header class="max-w-5xl mx-auto px-6 py-16 text-center md:text-left md:flex md:items-center md:justify-between border-b border-slate-800">
+    <div class="md:w-2/3">
+      <span class="bg-blue-600/20 text-blue-400 border border-blue-500/30 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+        Machine Learning & Fraud Analytics
+      </span>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mt-4 tracking-tight">
+        Adriana Huertas Martín
+      </h1>
+      <p class="text-xl text-slate-400 mt-2 font-medium">
+        Especialista en Business Intelligence & Optimización de Procesos
+      </p>
+      <p class="text-slate-300 mt-4 max-w-2xl">
+        Transformo datos complejos en soluciones estratégicas end-to-end: detección de patrones anómalos, analítica predictiva de fraudes, diseño de tableros interactivos en Power BI y reingeniería operativa.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+        <a href="mailto:adrimahuertas@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-5 py-2.5 rounded-lg transition flex items-center gap-2">
+          <i class="fa-solid fa-envelope"></i> Contactar
+        </a>
+        <a href="https://github.com/adrianamilenahuertasmartin-collab/Adriana-Huertas-PT" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium px-5 py-2.5 rounded-lg transition flex items-center gap-2">
+          <i class="fa-brands fa-github"></i> Ver GitHub
+        </a>
+      </div>
+    </div>
 
-    <script>
-        function evaluar() {
-            const monto = parseFloat(document.getElementById('monto').value) || 0;
-            const ubi = parseInt(document.getElementById('ubicacion').value);
-            const res = document.getElementById('resultado');
-            res.classList.remove('d-none', 'bg-danger', 'bg-success', 'text-white');
-            
-            let score = (monto / 2500) * 0.5 + (ubi * 0.5);
-            if (score > 0.5) {
-                res.classList.add('bg-danger', 'text-white');
-                res.innerHTML = `<strong>ALERTA DE FRAUDE:</strong> Score de riesgo ${(score*100).toFixed(0)}%. Acción: Bloquear.`;
-            } else {
-                res.classList.add('bg-success', 'text-white');
-                res.innerHTML = `<strong>APROBADA:</strong> Score de riesgo ${(score*100).toFixed(0)}%. Transacción segura.`;
-            }
-        }
-    </script>
+    <!-- FOTO DE PERFIL -->
+    <div class="mt-8 md:mt-0 flex justify-center">
+      <div class="relative group">
+        <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur opacity-50 group-hover:opacity-100 transition duration-300"></div>
+        <!-- Reemplaza 'foto.jpg' por el nombre exacto de la imagen de tu foto guardada en la carpeta -->
+        <img src="foto.jpg" alt="Adriana Huertas Martín" class="relative w-48 h-48 rounded-full object-cover border-4 border-slate-900 shadow-2xl" onerror="this.src='https://ui-avatars.com/api/?name=Adriana+Huertas&size=200&background=2563eb&color=fff'">
+      </div>
+    </div>
+  </header>
+
+  <!-- MÉTRICAS DE IMPACTO -->
+  <section class="max-w-5xl mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-6 text-center hover:border-blue-500/50 transition">
+        <div class="text-3xl font-extrabold text-blue-400 mb-1">-34%</div>
+        <div class="text-lg font-semibold text-white">Falsos Positivos</div>
+        <p class="text-sm text-slate-400 mt-2">Reducción mediante modelos XGBoost y balanceo SMOTE en tiempo real.</p>
+      </div>
+      <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-6 text-center hover:border-cyan-500/50 transition">
+        <div class="text-3xl font-extrabold text-cyan-400 mb-1">+42%</div>
+        <div class="text-lg font-semibold text-white">Eficiencia Operativa</div>
+        <p class="text-sm text-slate-400 mt-2">Optimización de tiempos de ciclo con Process Mining y Lean Six Sigma.</p>
+      </div>
+      <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-6 text-center hover:border-emerald-500/50 transition">
+        <div class="text-3xl font-extrabold text-emerald-400 mb-1">100%</div>
+        <div class="text-lg font-semibold text-white">Automatización BI</div>
+        <p class="text-sm text-slate-400 mt-2">Modelado en estrella y dashboards interactivos en Power BI con DAX.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK TECNOLÓGICO -->
+  <section class="max-w-5xl mx-auto px-6 py-10">
+    <h2 class="text-2xl font-bold text-white mb-6 border-l-4 border-blue-500 pl-3">Tecnologías & Herramientas</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
+        <span class="text-blue-400 font-semibold block mb-2"><i class="fa-solid fa-brain mr-2"></i> Machine Learning & Analytics</span>
+        <p class="text-sm text-slate-300">Python, Scikit-Learn, XGBoost, LightGBM, SMOTE, Pandas, NumPy, Statistics.</p>
+      </div>
+      <div class="bg-slate-800/40 p-4 rounded-lg border border-slate-700/40">
+        <span class="text-cyan-400 font-semibold block mb-2"><i class="fa-solid fa-chart-pie mr-2"></i> Business Intelligence & SQL</span>
+        <p class="text-sm text-slate-300">Power BI, DAX Avanzado, Power Query, SQL Server, PostgreSQL.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS DESTACADOS -->
+  <section class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-white mb-6 border-l-4 border-blue-500 pl-3">Proyectos Destacados</h2>
+    <div class="space-y-6">
+
+      <!-- Proyecto 1 -->
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-slate-600 transition">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+          <h3 class="text-xl font-bold text-white">1. Detección Inteligente de Fraude Financiero (ML)</h3>
+          <span class="text-xs bg-blue-900/60 text-blue-300 px-3 py-1 rounded-full border border-blue-700/50 w-fit">Python & ML</span>
+        </div>
+        <p class="text-slate-300 mt-3 text-sm">
+          Modelo supervisado para clasificación de transacciones anómalas con datos desbalanceados mediante SMOTE y gradiente impulsado por XGBoost.
+        </p>
+        <div class="mt-4 flex items-center gap-4 text-xs text-slate-400">
+          <span><strong class="text-slate-200">Impacto:</strong> -34% falsos positivos</span>
+          <span>•</span>
+          <a href="./proyectos/01-deteccion-fraude-ml" class="text-blue-400 hover:underline flex items-center gap-1">Ver Código <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-slate-600 transition">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+          <h3 class="text-xl font-bold text-white">2. Dashboard de Control Operativo y SLAs (BI)</h3>
+          <span class="text-xs bg-cyan-900/60 text-cyan-300 px-3 py-1 rounded-full border border-cyan-700/50 w-fit">Power BI & DAX</span>
+        </div>
+        <p class="text-slate-300 mt-3 text-sm">
+          Tablero interactivo para monitoreo en tiempo real de KPIs, tiempos de respuesta y eficiencia en la cadena de valor operativa.
+        </p>
+        <div class="mt-4 flex items-center gap-4 text-xs text-slate-400">
+          <span><strong class="text-slate-200">Impacto:</strong> 100% automatización de reportes</span>
+          <span>•</span>
+          <a href="./proyectos/02-dashboard-bi-operativo" class="text-blue-400 hover:underline flex items-center gap-1">Ver Código <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="text-center py-8 text-xs text-slate-500 border-t border-slate-800">
+    <p>© 2026 Adriana Huertas Martín — Portafolio Profesional</p>
+  </footer>
+
 </body>
 </html>

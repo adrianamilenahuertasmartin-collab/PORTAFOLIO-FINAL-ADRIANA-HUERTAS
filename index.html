@@ -7,31 +7,29 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    /* Estilo mejorado para hacer la foto más grande y elegante */
     .foto-perfil-container {
-      width: 220px;
-      height: 220px;
-      min-width: 220px;
-      min-height: 220px;
+      width: 280px;
+      height: 280px;
+      min-width: 280px;
+      min-height: 280px;
       border-radius: 9999px;
       overflow: hidden;
       border: 4px solid #f97316;
+      box-shadow: 0 25px 50px -12px rgba(249, 115, 22, 0.25);
+      background-color: #18181b;
     }
     .foto-perfil-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
-    }
-    .tab-active {
-      background-color: #f97316 !important;
-      color: #ffffff !important;
-      border-color: #f97316 !important;
+      object-position: center top; /* Centra la vista hacia arriba para enfocar mejor el rostro y torso */
     }
   </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100 font-sans leading-relaxed selection:bg-orange-500 selection:text-white">
 
-  <!-- BARRA DE NAVEGACIÓN SUPERIOR (ESTILO REFERENCIA) -->
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
   <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center border-b border-zinc-800/60">
     <div class="text-xl font-black tracking-wider text-orange-500">
       PORTAFOLIO<span class="text-white">.AI</span>
@@ -49,7 +47,7 @@
 
   <!-- HERO SECTION -->
   <header id="inicio" class="max-w-6xl mx-auto px-6 py-12">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
       
       <div class="md:w-3/5 text-center md:text-left">
         <span class="text-xs font-bold uppercase tracking-widest text-orange-400 bg-orange-950/50 border border-orange-800/40 px-3.5 py-1.5 rounded-full inline-block mb-3">
@@ -75,10 +73,10 @@
         </div>
       </div>
 
-      <!-- FOTO DE PERFIL -->
-      <div class="relative">
-        <div class="foto-perfil-container shadow-2xl shadow-orange-950/50">
-          <img src="foto.jpg" alt="Adriana Milena Huertas Martín" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Adriana+Huertas&size=300&background=f97316&color=fff';">
+      <!-- FOTO DE PERFIL MÁS GRANDE -->
+      <div class="relative flex justify-center">
+        <div class="foto-perfil-container">
+          <img src="foto.jpg" alt="Adriana Milena Huertas Martín" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Adriana+Huertas&size=400&background=f97316&color=fff';">
         </div>
       </div>
 
@@ -116,7 +114,6 @@
     <h3 class="text-2xl font-extrabold text-white mb-6">Empresas Clave donde lideré Transformación</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
       <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl hover:border-orange-500/50 transition">
         <span class="text-xs font-mono text-orange-400 bg-orange-950/60 px-3 py-1 rounded-full border border-orange-900">2021 - 2026</span>
         <h4 class="text-lg font-bold text-white mt-4">Banco de Bogotá</h4>
@@ -143,7 +140,6 @@
           Optimización de células de atención al cliente, reingeniería de PQRs bajo metodologías ágiles y auditoría institucional de procesos.
         </p>
       </div>
-
     </div>
   </section>
 
@@ -153,8 +149,6 @@
     <h3 class="text-2xl font-extrabold text-white mb-6">Habilidades Duras & Blandas</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      
-      <!-- Hard Skills -->
       <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl">
         <h4 class="text-sm font-bold text-white mb-4 flex items-center gap-2 border-b border-zinc-800 pb-3">
           <i class="fa-solid fa-code text-orange-500"></i> Habilidades Duras (Hard Skills)
@@ -170,7 +164,6 @@
         </div>
       </div>
 
-      <!-- Soft Skills -->
       <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl">
         <h4 class="text-sm font-bold text-white mb-4 flex items-center gap-2 border-b border-zinc-800 pb-3">
           <i class="fa-solid fa-users text-emerald-500"></i> Habilidades Blandas (Soft Skills)
@@ -183,7 +176,6 @@
           <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Negociación & Toma de Decisiones</span>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -193,8 +185,6 @@
     <h3 class="text-2xl font-extrabold text-white mb-6">Demos Visuales de Proyectos</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-      <!-- Demo 1: IA -->
       <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-orange-500/50 transition">
         <div>
           <span class="text-xs font-bold text-orange-400 bg-orange-950 px-3 py-1 rounded-full border border-orange-800">IA & Prevención</span>
@@ -206,7 +196,6 @@
         </button>
       </div>
 
-      <!-- Demo 2: Power BI -->
       <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-cyan-500/50 transition">
         <div>
           <span class="text-xs font-bold text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">Analítica BI</span>
@@ -218,7 +207,6 @@
         </button>
       </div>
 
-      <!-- Demo 3: RPA -->
       <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition">
         <div>
           <span class="text-xs font-bold text-emerald-400 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800">RPA / Automation</span>
@@ -229,14 +217,13 @@
           <i class="fa-solid fa-robot"></i> Ejecutar Bot Demo
         </button>
       </div>
-
     </div>
   </section>
 
   <!-- FORMACIÓN ACADÉMICA -->
   <section class="max-w-6xl mx-auto px-6 py-10">
     <h2 class="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">Fundamento Profesional</h2>
-    <h3 class="text-2xl font-extrabold text-white mb-6">Estudios Superior</h3>
+    <h3 class="text-2xl font-extrabold text-white mb-6">Estudios Superiores</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div class="bg-zinc-900/80 p-5 rounded-2xl border border-zinc-800">

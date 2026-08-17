@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Interactivo | Adriana Huertas</title>
+  <title>Portafolio | Adriana Milena Huertas Martín</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     .foto-perfil-container {
-      width: 170px;
-      height: 170px;
-      min-width: 170px;
-      min-height: 170px;
+      width: 220px;
+      height: 220px;
+      min-width: 220px;
+      min-height: 220px;
       border-radius: 9999px;
       overflow: hidden;
-      border: 4px solid #2563eb;
+      border: 4px solid #f97316;
     }
     .foto-perfil-container img {
       width: 100%;
@@ -23,337 +23,319 @@
       object-position: center;
     }
     .tab-active {
-      background-color: #2563eb !important;
+      background-color: #f97316 !important;
       color: #ffffff !important;
-      border-color: #3b82f6 !important;
+      border-color: #f97316 !important;
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans leading-relaxed selection:bg-blue-500 selection:text-white">
+<body class="bg-zinc-950 text-zinc-100 font-sans leading-relaxed selection:bg-orange-500 selection:text-white">
 
-  <!-- ENCABEZADO / PERFIL PRINCIPAL -->
-  <header class="max-w-6xl mx-auto px-6 pt-12 pb-8 border-b border-slate-800/80">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR (ESTILO REFERENCIA) -->
+  <nav class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center border-b border-zinc-800/60">
+    <div class="text-xl font-black tracking-wider text-orange-500">
+      PORTAFOLIO<span class="text-white">.AI</span>
+    </div>
+    <div class="hidden md:flex gap-6 text-xs font-semibold uppercase tracking-wider text-zinc-400">
+      <a href="#inicio" class="hover:text-orange-500 transition">Inicio</a>
+      <a href="#impacto" class="hover:text-orange-500 transition">Empresas</a>
+      <a href="#habilidades" class="hover:text-orange-500 transition">Habilidades</a>
+      <a href="#proyectos" class="hover:text-orange-500 transition">Demos</a>
+    </div>
+    <a href="mailto:adrimile_8@outlook.com" class="bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition shadow-lg shadow-orange-500/20">
+      Contactar
+    </a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="inicio" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-10">
       
-      <div class="md:w-3/4 text-center md:text-left">
-        <div class="inline-flex items-center gap-2 bg-blue-950/80 border border-blue-500/40 text-blue-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">
-          <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-          Líder de Proyectos & Inteligencia Artificial
-        </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-          Adriana Huertas V[cite: 1]
+      <div class="md:w-3/5 text-center md:text-left">
+        <span class="text-xs font-bold uppercase tracking-widest text-orange-400 bg-orange-950/50 border border-orange-800/40 px-3.5 py-1.5 rounded-full inline-block mb-3">
+          Hola, soy
+        </span>
+        <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+          Adriana Milena Huertas Martín
         </h1>
-        <p class="text-lg md:text-xl text-slate-300 font-medium mt-2">
-          Jefe de Automatización, Mejora Continua & Analítica Aplicada[cite: 1]
+        <p class="text-xl text-orange-500 font-bold mt-2">
+          Jefe de Automatización, Mejora Continua & IA Aplicada
         </p>
-        <p class="text-xs md:text-sm text-slate-400 mt-2 flex flex-wrap justify-center md:justify-start gap-4">
-          <span><i class="fa-solid fa-location-dot text-blue-400 mr-1.5"></i> Mosquera, Colombia[cite: 1]</span>
-          <span><i class="fa-solid fa-envelope text-blue-400 mr-1.5"></i> adrimile_8@outlook.com[cite: 1]</span>
-          <span><i class="fa-solid fa-phone text-blue-400 mr-1.5"></i> +57 324 729 9090[cite: 1]</span>
+        <p class="text-sm text-zinc-400 mt-4 leading-relaxed max-w-xl">
+          Especialista en Gerencia de Proyectos y Máster en IA. Lidero la transformación digital, optimización de procesos logísticos/operativos y mitigación de fraudes financieros.
         </p>
+
+        <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
+          <a href="#proyectos" class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-orange-500/30 flex items-center gap-2">
+            <i class="fa-solid fa-laptop-code"></i> Ver Demos Interactivas
+          </a>
+          <a href="tel:+573247299090" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-200 border border-zinc-700 text-xs font-bold px-6 py-3 rounded-xl transition flex items-center gap-2">
+            <i class="fa-solid fa-phone"></i> +57 324 729 9090
+          </a>
+        </div>
       </div>
 
       <!-- FOTO DE PERFIL -->
-      <div class="foto-perfil-container shadow-2xl shadow-blue-900/30">
-        <img src="foto.jpg" alt="Adriana Huertas" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Adriana+Huertas&size=200&background=2563eb&color=fff';">
+      <div class="relative">
+        <div class="foto-perfil-container shadow-2xl shadow-orange-950/50">
+          <img src="foto.jpg" alt="Adriana Milena Huertas Martín" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Adriana+Huertas&size=300&background=f97316&color=fff';">
+        </div>
       </div>
 
     </div>
 
-    <!-- TARJETAS DE MÉTRICAS -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-      <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex items-center gap-4">
-        <div class="p-3 bg-blue-600/20 text-blue-400 rounded-lg text-2xl"><i class="fa-solid fa-bolt"></i></div>
+    <!-- TARJETAS DE IMPACTO -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
+      <div class="bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl flex items-center gap-4">
+        <div class="p-3 bg-orange-500/20 text-orange-400 rounded-xl text-2xl"><i class="fa-solid fa-bolt"></i></div>
         <div>
           <div class="text-2xl font-black text-white">-60%</div>
-          <div class="text-xs text-slate-400">Cargas manuales (RPA / Python)[cite: 1]</div>
+          <div class="text-xs text-zinc-400">Cargas Manuales (RPA & Python)</div>
         </div>
       </div>
-      <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex items-center gap-4">
-        <div class="p-3 bg-emerald-600/20 text-emerald-400 rounded-lg text-2xl"><i class="fa-solid fa-award"></i></div>
+      <div class="bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl flex items-center gap-4">
+        <div class="p-3 bg-emerald-500/20 text-emerald-400 rounded-xl text-2xl"><i class="fa-solid fa-shield-halved"></i></div>
         <div>
-          <div class="text-base font-bold text-white">Reconocimiento IA 2026</div>
-          <div class="text-xs text-slate-400">Ponencia Detección de Fraude[cite: 1]</div>
+          <div class="text-base font-bold text-white">Ponencia IA 2026</div>
+          <div class="text-xs text-zinc-400">Detección de Fraudes Financieros</div>
         </div>
       </div>
-      <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex items-center gap-4">
-        <div class="p-3 bg-cyan-600/20 text-cyan-400 rounded-lg text-2xl"><i class="fa-solid fa-chart-column"></i></div>
+      <div class="bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl flex items-center gap-4">
+        <div class="p-3 bg-blue-500/20 text-blue-400 rounded-xl text-2xl"><i class="fa-solid fa-award"></i></div>
         <div>
-          <div class="text-base font-bold text-white">Power BI & Dashboards</div>
-          <div class="text-xs text-slate-400">Certificación IBM 2026[cite: 1]</div>
+          <div class="text-base font-bold text-white">IBM Certified</div>
+          <div class="text-xs text-zinc-400">Data Visualization & Python</div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- MENÚ INTERACTIVO DE NAVEGACIÓN (TABS) -->
-  <nav class="max-w-6xl mx-auto px-6 my-6">
-    <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-4">
-      <button onclick="switchTab('proyectos')" id="tab-proyectos" class="tab-btn tab-active px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider border border-slate-700 bg-slate-900 text-slate-300 hover:bg-slate-800 transition flex items-center gap-2">
-        <i class="fa-solid fa-laptop-code"></i> Proyectos & Demos
-      </button>
-      <button onclick="switchTab('experiencia')" id="tab-experiencia" class="tab-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider border border-slate-700 bg-slate-900 text-slate-300 hover:bg-slate-800 transition flex items-center gap-2">
-        <i class="fa-solid fa-briefcase"></i> Experiencia Laboral[cite: 1]
-      </button>
-      <button onclick="switchTab('estudios')" id="tab-estudios" class="tab-btn px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider border border-slate-700 bg-slate-900 text-slate-300 hover:bg-slate-800 transition flex items-center gap-2">
-        <i class="fa-solid fa-graduation-cap"></i> Estudios & Certificados[cite: 1]
-      </button>
+  <!-- PRINCIPALES EMPRESAS DE IMPLEMENTACIÓN -->
+  <section id="impacto" class="max-w-6xl mx-auto px-6 py-10">
+    <h2 class="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">Trayectoria de Impacto</h2>
+    <h3 class="text-2xl font-extrabold text-white mb-6">Empresas Clave donde lideré Transformación</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl hover:border-orange-500/50 transition">
+        <span class="text-xs font-mono text-orange-400 bg-orange-950/60 px-3 py-1 rounded-full border border-orange-900">2021 - 2026</span>
+        <h4 class="text-lg font-bold text-white mt-4">Banco de Bogotá</h4>
+        <p class="text-xs text-orange-400 font-semibold mb-3">Jefe de Automatización y Mejora Continua</p>
+        <p class="text-xs text-zinc-400 leading-relaxed">
+          Reingeniería operacional Lean Six Sigma, automatización RPA/Python, implementación de tableros de control en Power BI y control presupuestal de proyectos SAP/Salesforce.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl hover:border-orange-500/50 transition">
+        <span class="text-xs font-mono text-zinc-400 bg-zinc-800 px-3 py-1 rounded-full">2020 - 2021</span>
+        <h4 class="text-lg font-bold text-white mt-4">Aerosan S.A.S</h4>
+        <p class="text-xs text-zinc-400 font-semibold mb-3">Coordinadora de Procesos e Importación</p>
+        <p class="text-xs text-zinc-400 leading-relaxed">
+          Automatización robótica en procesos logísticos y aduaneros, optimización omnicanal y control de trazabilidad en la cadena de suministro.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl hover:border-orange-500/50 transition">
+        <span class="text-xs font-mono text-zinc-400 bg-zinc-800 px-3 py-1 rounded-full">2018 - 2020</span>
+        <h4 class="text-lg font-bold text-white mt-4">Unidad Víctimas / Savicol / Colsubsidio</h4>
+        <p class="text-xs text-zinc-400 font-semibold mb-3">Auditora & Líder PQR / Servicio</p>
+        <p class="text-xs text-zinc-400 leading-relaxed">
+          Optimización de células de atención al cliente, reingeniería de PQRs bajo metodologías ágiles y auditoría institucional de procesos.
+        </p>
+      </div>
+
     </div>
-  </nav>
+  </section>
 
-  <!-- CONTENIDO DE LAS SECCIONES -->
-  <main class="max-w-6xl mx-auto px-6 pb-16">
+  <!-- HABILIDADES DURAS Y BLANDAS -->
+  <section id="habilidades" class="max-w-6xl mx-auto px-6 py-10">
+    <h2 class="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">Matriz de Competencias</h2>
+    <h3 class="text-2xl font-extrabold text-white mb-6">Habilidades Duras & Blandas</h3>
 
-    <!-- SECCIÓN 1: PROYECTOS & DEMOS (INTERACTIVOS) -->
-    <section id="sec-proyectos" class="tab-content block">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        <!-- Proyecto 1: IA -->
-        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-500/50 transition">
-          <div>
-            <div class="flex justify-between items-center">
-              <span class="text-xs font-bold text-blue-400 bg-blue-950/80 px-3 py-1 rounded-full border border-blue-800/50">IA & Prevención</span>
-              <span class="text-xs text-slate-500 font-mono">2026</span>
-            </div>
-            <h3 class="text-lg font-bold text-white mt-4">Detección de Fraude Financiero[cite: 1]</h3>
-            <p class="text-xs text-slate-300 mt-2">
-              Modelo analítico presentado en la Universidad de la Salle para identificar transacciones inusuales y compras no reconocidas[cite: 1].
-            </p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-            <span class="text-xs text-slate-400"><i class="fa-solid fa-trophy text-amber-400 mr-1"></i> Ponencia[cite: 1]</span>
-            <button onclick="openModal('demo1')" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-blue-600/30">
-              <i class="fa-solid fa-circle-play"></i> Ver Demo
-            </button>
-          </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Hard Skills -->
+      <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl">
+        <h4 class="text-sm font-bold text-white mb-4 flex items-center gap-2 border-b border-zinc-800 pb-3">
+          <i class="fa-solid fa-code text-orange-500"></i> Habilidades Duras (Hard Skills)
+        </h4>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Inteligencia Artificial (IA)</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Python & Algoritmos</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">RPA (Robotic Process Automation)</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Power BI & Dashboards</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Gerencia Proyectos (PMI)</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Lean Six Sigma</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Ecosistemas SAP & Salesforce</span>
         </div>
-
-        <!-- Proyecto 2: Power BI -->
-        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-cyan-500/50 transition">
-          <div>
-            <div class="flex justify-between items-center">
-              <span class="text-xs font-bold text-cyan-400 bg-cyan-950/80 px-3 py-1 rounded-full border border-cyan-800/50">Power BI & Python</span>
-              <span class="text-xs text-slate-500 font-mono">IBM Cert.[cite: 1]</span>
-            </div>
-            <h3 class="text-lg font-bold text-white mt-4">Dashboards & Visualización[cite: 1]</h3>
-            <p class="text-xs text-slate-300 mt-2">
-              Paneles de control interrelacionando métricas operacionales, volumen de PQR, tiempos de respuesta y monitoreo financiero[cite: 1].
-            </p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-            <span class="text-xs text-slate-400"><i class="fa-solid fa-chart-line text-cyan-400 mr-1"></i> Control KPIs[cite: 1]</span>
-            <button onclick="openModal('demo-bi')" class="bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-cyan-600/30">
-              <i class="fa-solid fa-chart-pie"></i> Ver BI Demo
-            </button>
-          </div>
-        </div>
-
-        <!-- Proyecto 3: RPA -->
-        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition">
-          <div>
-            <div class="flex justify-between items-center">
-              <span class="text-xs font-bold text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-800/50">RPA & Automatización</span>
-              <span class="text-xs text-slate-500 font-mono">Banco Bogotá[cite: 1]</span>
-            </div>
-            <h3 class="text-lg font-bold text-white mt-4">Automatización Operativa[cite: 1]</h3>
-            <p class="text-xs text-slate-300 mt-2">
-              Eliminación de tareas repetitivas mediante bots RPA y automatización con Python en procesos de servicio y banca[cite: 1].
-            </p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-            <span class="text-xs text-slate-400"><i class="fa-solid fa-bolt text-emerald-400 mr-1"></i> -60% Carga[cite: 1]</span>
-            <button onclick="openModal('demo2')" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-emerald-600/30">
-              <i class="fa-solid fa-circle-play"></i> Ver Demo
-            </button>
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <!-- SECCIÓN 2: EXPERIENCIA LABORAL -->
-    <section id="sec-experiencia" class="tab-content hidden">
-      <div class="bg-slate-900/90 border border-slate-800 p-6 md:p-8 rounded-2xl space-y-8">
-        
-        <div class="border-l-2 border-blue-500 pl-4">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h3 class="text-lg font-bold text-white">Jefe de Automatización y Mejora Continua de Procesos[cite: 1]</h3>
-            <span class="text-xs bg-blue-950 text-blue-400 px-3 py-1 rounded-full border border-blue-800 font-mono">Ene 2021 - Ago 2026[cite: 1]</span>
-          </div>
-          <p class="text-xs font-bold text-blue-400 mt-0.5">Banco de Bogotá[cite: 1]</p>
-          <ul class="list-disc list-inside text-xs text-slate-300 mt-3 space-y-1.5">
-            <li>Reducción del 60% de cargas manuales con Python y RPA en procesos operativos y servicio al cliente[cite: 1].</li>
-            <li>Implementación de cronogramas y control presupuestal en proyectos SAP y Salesforce[cite: 1].</li>
-            <li>Reingeniería de procesos bajo metodologías Lean y Six Sigma[cite: 1].</li>
-            <li>Construcción de Dashboards en Power BI + Python para seguimiento de KPIs en tiempo real[cite: 1].</li>
-          </ul>
+      <!-- Soft Skills -->
+      <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl">
+        <h4 class="text-sm font-bold text-white mb-4 flex items-center gap-2 border-b border-zinc-800 pb-3">
+          <i class="fa-solid fa-users text-emerald-500"></i> Habilidades Blandas (Soft Skills)
+        </h4>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Liderazgo Estratégico</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Pensamiento Analítico</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Gestión del Cambio Organizacional</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Resolución Compleja de Problemas</span>
+          <span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-lg border border-zinc-700">Negociación & Toma de Decisiones</span>
         </div>
-
-        <div class="border-l-2 border-slate-700 pl-4">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h3 class="text-lg font-bold text-white">Coordinadora de Procesos e Importación[cite: 1]</h3>
-            <span class="text-xs bg-slate-800 text-slate-400 px-3 py-1 rounded-full border border-slate-700 font-mono">Ene 2020 - Ene 2021[cite: 1]</span>
-          </div>
-          <p class="text-xs font-bold text-slate-400 mt-0.5">Aerosan S.A.S[cite: 1]</p>
-          <p class="text-xs text-slate-300 mt-2">Automatización de flujos logísticos y aduaneros con RPA, optimizando trazabilidad e indicadores clave de tiempo de respuesta[cite: 1].</p>
-        </div>
-
-        <div class="border-l-2 border-slate-700 pl-4">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h3 class="text-lg font-bold text-white">Auditor de Calidad & Coordinadora PQR[cite: 1]</h3>
-            <span class="text-xs bg-slate-800 text-slate-400 px-3 py-1 rounded-full border border-slate-700 font-mono">2018 - 2020[cite: 1]</span>
-          </div>
-          <p class="text-xs font-bold text-slate-400 mt-0.5">Unidad para las Víctimas / Savicol S.A / Colsubsidio[cite: 1]</p>
-          <p class="text-xs text-slate-300 mt-2">Liderazgo de células de atención al cliente, reingeniería de atención a PQRs y auditoría institucional de procesos[cite: 1].</p>
-        </div>
-
       </div>
-    </section>
 
-    <!-- SECCIÓN 3: ESTUDIOS & CERTIFICACIONES -->
-    <section id="sec-estudios" class="tab-content hidden">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    </div>
+  </section>
 
-        <!-- Estudios -->
-        <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl space-y-4">
-          <h3 class="text-base font-bold text-white border-b border-slate-800 pb-2 flex items-center gap-2">
-            <i class="fa-solid fa-graduation-cap text-blue-400"></i> Formación Académica[cite: 1]
-          </h3>
-          <div>
-            <span class="text-xs font-bold text-blue-400">Dic 2025 - Actual[cite: 1]</span>
-            <h4 class="text-sm font-bold text-white">Maestría en Inteligencia Artificial[cite: 1]</h4>
-            <p class="text-xs text-slate-400">Universidad de la Salle[cite: 1]</p>
-          </div>
-          <div>
-            <span class="text-xs font-bold text-cyan-400">Ene 2016 - Jul 2017[cite: 1]</span>
-            <h4 class="text-sm font-bold text-white">Especialista en Gerencia de Proyectos[cite: 1]</h4>
-            <p class="text-xs text-slate-400">Universidad Nacional UNAD[cite: 1]</p>
-          </div>
-          <div>
-            <span class="text-xs font-bold text-slate-500">2002 - 2009[cite: 1]</span>
-            <h4 class="text-sm font-bold text-white">Administración de Empresas[cite: 1]</h4>
-            <p class="text-xs text-slate-400">Fundación Universitaria Compensar[cite: 1]</p>
-          </div>
+  <!-- PROYECTOS & DEMOS INTERACTIVAS ULTRA VISUALES -->
+  <section id="proyectos" class="max-w-6xl mx-auto px-6 py-10">
+    <h2 class="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">Simulaciones en Vivo</h2>
+    <h3 class="text-2xl font-extrabold text-white mb-6">Demos Visuales de Proyectos</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Demo 1: IA -->
+      <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-orange-500/50 transition">
+        <div>
+          <span class="text-xs font-bold text-orange-400 bg-orange-950 px-3 py-1 rounded-full border border-orange-800">IA & Prevención</span>
+          <h4 class="text-lg font-bold text-white mt-4">Detección de Fraudes</h4>
+          <p class="text-xs text-zinc-400 mt-2">Modelo predictivo para detección de compras no reconocidas en canales bancarios.</p>
         </div>
-
-        <!-- Certificaciones -->
-        <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl space-y-4">
-          <h3 class="text-base font-bold text-white border-b border-slate-800 pb-2 flex items-center gap-2">
-            <i class="fa-solid fa-certificate text-emerald-400"></i> Certificaciones & Reconocimientos[cite: 1]
-          </h3>
-          <div class="p-3 bg-emerald-950/30 border border-emerald-800/40 rounded-xl">
-            <span class="text-xs font-bold text-emerald-400">Mayo 2026 — Ponencia Destacada[cite: 1]</span>
-            <h4 class="text-xs font-bold text-white mt-1">Detección de Fraudes Financieros con IA[cite: 1]</h4>
-            <p class="text-xs text-slate-400">Universidad de la Salle[cite: 1]</p>
-          </div>
-          <div>
-            <span class="text-xs font-bold text-blue-400">Agosto 2026 — IBM[cite: 1]</span>
-            <h4 class="text-xs font-bold text-white">Data Visualization and Communication[cite: 1]</h4>
-          </div>
-          <div>
-            <span class="text-xs font-bold text-blue-400">Agosto 2026 — IBM[cite: 1]</span>
-            <h4 class="text-xs font-bold text-white">Create a Data Visualization with Python[cite: 1]</h4>
-          </div>
-        </div>
-
+        <button onclick="openModal('demo-ia')" class="mt-6 bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-eye"></i> Abrir Demo Visual
+        </button>
       </div>
-    </section>
 
-  </main>
+      <!-- Demo 2: Power BI -->
+      <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-cyan-500/50 transition">
+        <div>
+          <span class="text-xs font-bold text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">Analítica BI</span>
+          <h4 class="text-lg font-bold text-white mt-4">Dashboard Operacional</h4>
+          <p class="text-xs text-zinc-400 mt-2">Monitoreo interactivo de KPIs, volumen de PQRs y tiempos de respuesta en tiempo real.</p>
+        </div>
+        <button onclick="openModal('demo-bi')" class="mt-6 bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-chart-pie"></i> Abrir Dashboard BI
+        </button>
+      </div>
 
-  <!-- POPUP / MODAL INTERACTIVO PARA LAS DEMOS -->
-  <div id="modal-container" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
-    <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-lg w-full p-6 relative shadow-2xl">
-      <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">
+      <!-- Demo 3: RPA -->
+      <div class="bg-zinc-900/90 border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition">
+        <div>
+          <span class="text-xs font-bold text-emerald-400 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800">RPA / Automation</span>
+          <h4 class="text-lg font-bold text-white mt-4">Bot de Procesos</h4>
+          <p class="text-xs text-zinc-400 mt-2">Ejecución robótica para sustitución de tareas manuales repetitivas.</p>
+        </div>
+        <button onclick="openModal('demo-rpa')" class="mt-6 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-robot"></i> Ejecutar Bot Demo
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORMACIÓN ACADÉMICA -->
+  <section class="max-w-6xl mx-auto px-6 py-10">
+    <h2 class="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">Fundamento Profesional</h2>
+    <h3 class="text-2xl font-extrabold text-white mb-6">Estudios Superior</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-zinc-900/80 p-5 rounded-2xl border border-zinc-800">
+        <span class="text-xs font-bold text-orange-400">2025 - Actual</span>
+        <h4 class="text-base font-bold text-white mt-1">Maestría en Inteligencia Artificial</h4>
+        <p class="text-xs text-zinc-400">Universidad de la Salle</p>
+      </div>
+      <div class="bg-zinc-900/80 p-5 rounded-2xl border border-zinc-800">
+        <span class="text-xs font-bold text-cyan-400">2016 - 2017</span>
+        <h4 class="text-base font-bold text-white mt-1">Especialización en Gerencia de Proyectos</h4>
+        <p class="text-xs text-zinc-400">Universidad Nacional UNAD</p>
+      </div>
+      <div class="bg-zinc-900/80 p-5 rounded-2xl border border-zinc-800">
+        <span class="text-xs font-bold text-zinc-500">2002 - 2009</span>
+        <h4 class="text-base font-bold text-white mt-1">Administración de Empresas</h4>
+        <p class="text-xs text-zinc-400">Fundación Universitaria Compensar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL FLOTANTE PARA DEMOS INTERACTIVAS -->
+  <div id="modal-container" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center hidden p-4">
+    <div class="bg-zinc-900 border border-zinc-700 rounded-2xl max-w-xl w-full p-6 relative shadow-2xl">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white text-xl">
         <i class="fa-solid fa-xmark"></i>
       </button>
 
-      <!-- Demo 1: IA -->
-      <div id="demo1" class="modal-content hidden space-y-4">
-        <span class="text-xs font-bold text-blue-400 bg-blue-950 px-3 py-1 rounded-full border border-blue-800">Demo interactiva — IA</span>
-        <h3 class="text-xl font-bold text-white">Detección de Fraude Financiero con IA[cite: 1]</h3>
-        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 space-y-2">
-          <p class="text-emerald-400">> Simulador de Alertas en Tiempo Real:</p>
-          <p>[SISTEMA]: Evaluando transacción #8942...</p>
-          <p>[SCORE RIESGO]: 98% (Anomalía detectada)</p>
-          <p class="text-amber-400">[ACCION]: Bloqueo preventivo activado automáticamente.</p>
-        </div>
-        <p class="text-xs text-slate-300">
-          Proyecto presentado en la Universidad de la Salle para predecir movimientos inusuales en canales digitales[cite: 1].
-        </p>
-      </div>
-
-      <!-- Demo BI: Power BI -->
-      <div id="demo-bi" class="modal-content hidden space-y-4">
-        <span class="text-xs font-bold text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">Demo interactiva — Power BI</span>
-        <h3 class="text-xl font-bold text-white">Dashboard Analítico Power BI & Python[cite: 1]</h3>
+      <!-- Contenido IA -->
+      <div id="demo-ia" class="modal-content hidden space-y-4">
+        <span class="text-xs font-bold text-orange-400 bg-orange-950 px-3 py-1 rounded-full border border-orange-800">Simulación IA</span>
+        <h3 class="text-xl font-bold text-white">Detector de Transacciones Sospechosas</h3>
         
-        <!-- Simulación Visual del Dashboard BI -->
-        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs space-y-3">
-          <div class="flex justify-between border-b border-slate-800 pb-2">
-            <span class="text-slate-400">KPI Principal</span>
-            <span class="text-cyan-400 font-bold">Cumplimiento SLA: 98.4%</span>
+        <div class="bg-zinc-950 p-4 rounded-xl border border-zinc-800 text-xs font-mono space-y-2">
+          <div class="flex justify-between text-zinc-400 border-b border-zinc-800 pb-1">
+            <span>ID Transacción: #8942-X</span>
+            <span class="text-orange-400">Riesgo: 96%</span>
           </div>
-          <div class="grid grid-cols-2 gap-2 text-center">
-            <div class="bg-slate-900 p-2 rounded border border-slate-800">
-              <span class="block text-slate-400 text-[10px]">PQRs Resueltas</span>
-              <strong class="text-white text-sm">12,450</strong>
-            </div>
-            <div class="bg-slate-900 p-2 rounded border border-slate-800">
-              <span class="block text-slate-400 text-[10px]">Tiempo Medio</span>
-              <strong class="text-emerald-400 text-sm">1.2 días</strong>
-            </div>
+          <p class="text-zinc-300">Ubicación: Exterior (IP Inusual)</p>
+          <p class="text-zinc-300">Monto: $4,500,000 COP</p>
+          <div class="p-2 bg-red-950/60 border border-red-800/60 rounded text-red-300 font-bold mt-2">
+            [ALERTA AUTOMÁTICA]: Transacción bloqueada preventivamente.
           </div>
-          <div class="w-full bg-slate-900 h-3 rounded-full overflow-hidden flex">
-            <div class="bg-cyan-500 h-full" style="width: 70%"></div>
-            <div class="bg-blue-600 h-full" style="width: 30%"></div>
-          </div>
-          <p class="text-[10px] text-slate-400 text-center">Filtro activo: Banco de Bogotá — Operaciones[cite: 1]</p>
         </div>
-
-        <p class="text-xs text-slate-300">
-          Visualización basada en las certificaciones oficiales de IBM para correlacionar bases de datos masivas en tiempo real[cite: 1].
-        </p>
       </div>
 
-      <!-- Demo 2: RPA -->
-      <div id="demo2" class="modal-content hidden space-y-4">
-        <span class="text-xs font-bold text-emerald-400 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800">Demo interactiva — RPA</span>
-        <h3 class="text-xl font-bold text-white">Bot de Automatización & Analítica RPA[cite: 1]</h3>
-        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 space-y-2">
-          <p class="text-cyan-400">> Ejecución de Flujo Robótico:</p>
-          <p>[BOT]: Extrayendo reportes masivos de PQR y servicio...</p>
-          <p>[PYTHON]: Generando indicadores KPI y alertas SLA...</p>
-          <p class="text-emerald-400">[RESULTADO]: Procesamiento finalizado en 2 segundos (Antes: 4 horas manuales).</p>
+      <!-- Contenido BI -->
+      <div id="demo-bi" class="modal-content hidden space-y-4">
+        <span class="text-xs font-bold text-cyan-400 bg-cyan-950 px-3 py-1 rounded-full border border-cyan-800">Simulación Dashboard</span>
+        <h3 class="text-xl font-bold text-white">Panel Analítico Operacional</h3>
+        
+        <div class="bg-zinc-950 p-4 rounded-xl border border-zinc-800 text-xs space-y-3">
+          <div class="flex justify-between items-center">
+            <span class="text-zinc-400">Eficiencia Operativa</span>
+            <span class="text-emerald-400 font-bold text-sm">98.2% SLA</span>
+          </div>
+          <div class="w-full bg-zinc-800 h-3 rounded-full overflow-hidden flex">
+            <div class="bg-orange-500 h-full" style="width: 70%"></div>
+            <div class="bg-cyan-500 h-full" style="width: 30%"></div>
+          </div>
+          <div class="grid grid-cols-2 gap-2 text-center text-[10px]">
+            <div class="bg-zinc-900 p-2 rounded border border-zinc-800">
+              <span class="block text-zinc-500">Cargas Manuales Evitadas</span>
+              <strong class="text-white text-xs">60%</strong>
+            </div>
+            <div class="bg-zinc-900 p-2 rounded border border-zinc-800">
+              <span class="block text-zinc-500">Tiempo Respuesta</span>
+              <strong class="text-emerald-400 text-xs">-45 mins</strong>
+            </div>
+          </div>
         </div>
-        <p class="text-xs text-slate-300">
-          Solución implementada para reducir cargas manuales en un 60% en el sector financiero[cite: 1].
-        </p>
+      </div>
+
+      <!-- Contenido RPA -->
+      <div id="demo-rpa" class="modal-content hidden space-y-4">
+        <span class="text-xs font-bold text-emerald-400 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-800">Simulación RPA</span>
+        <h3 class="text-xl font-bold text-white">Ejecutando Bot en Servidor</h3>
+        
+        <div class="bg-zinc-950 p-4 rounded-xl border border-zinc-800 font-mono text-xs text-zinc-300 space-y-2">
+          <p class="text-cyan-400">> Iniciando Bot RPA v3.2...</p>
+          <p>[1/3] Extrayendo solicitudes PQR pendientes...</p>
+          <p>[2/3] Procesando scripts en Python...</p>
+          <p class="text-emerald-400">[3/3] Proceso completado exitosamente en 1.4 segundos.</p>
+        </div>
       </div>
 
       <div class="mt-6 text-right">
-        <button onclick="closeModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold px-4 py-2 rounded-xl border border-slate-700">
-          Cerrar Vista
+        <button onclick="closeModal()" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs font-bold px-4 py-2 rounded-xl">
+          Cerrar
         </button>
       </div>
+
     </div>
   </div>
 
-  <!-- JAVASCRIPT INTERACTIVO -->
+  <!-- JAVASCRIPT DE INTERACCION -->
   <script>
-    function switchTab(tabName) {
-      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('block'));
-      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('tab-active'));
-
-      document.getElementById('sec-' + tabName).classList.remove('hidden');
-      document.getElementById('sec-' + tabName).classList.add('block');
-      document.getElementById('tab-' + tabName).classList.add('tab-active');
-    }
-
-    function openModal(demoId) {
+    function openModal(modalId) {
       document.querySelectorAll('.modal-content').forEach(el => el.classList.add('hidden'));
-      document.getElementById(demoId).classList.remove('hidden');
+      document.getElementById(modalId).classList.remove('hidden');
       document.getElementById('modal-container').classList.remove('hidden');
     }
 
@@ -361,6 +343,11 @@
       document.getElementById('modal-container').classList.add('hidden');
     }
   </script>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="text-center py-8 text-xs text-zinc-600 border-t border-zinc-900 mt-12">
+    <p>© 2026 Adriana Milena Huertas Martín — Mosquera / Bogotá, Colombia</p>
+  </footer>
 
 </body>
 </html>
